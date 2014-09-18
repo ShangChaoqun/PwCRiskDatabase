@@ -6,6 +6,7 @@ using PwCRiskDatabase.Models;
 
 namespace PwCRiskDatabase.IDAL
 {
+    //All method should be achieved in Risk
     public interface IRisk
     {
         RiskInfor GetRiskInfor();
