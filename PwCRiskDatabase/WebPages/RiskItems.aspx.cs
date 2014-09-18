@@ -17,7 +17,7 @@ namespace PwCRiskDatabase.WebPages
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //lblTitle.Text = SqlHelper.CONN_STR;
+            lblTitle.Text = SqlHelper.CONN_STR;
         }
     }
 }
