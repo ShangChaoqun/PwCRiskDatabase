@@ -31,7 +31,7 @@ namespace PwCRiskDatabase.SQLServerDAL
                     Ri = new RiskInfor(sdr.GetInt32(0), sdr.GetString(1), sdr.GetString(2));
                 }
             }
-            return ci;
+            return Ri;
         }
     }
 }

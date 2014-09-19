@@ -46,10 +46,7 @@ namespace PwCRiskDatabase.SQLServerDAL
             cmd.CommandType = cmdType;
 
             if (cmdParms != null)
-            {
-                foreach (SqlParameter parm in cmdParms)
-                    cmd.Parameters.Add(parm);
-            }
+                cmd.Parameters.AddRange(cmdParms);
         }
     }
 }

@@ -64,8 +64,15 @@
     <Content Include="WebPages\LogIn.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="IDAL\IRisk.cs" />
+    <Compile Include="IDAL\IUser.cs" />
+    <Compile Include="Models\RiskInfor.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLServerDAL\Risk.cs" />
     <Compile Include="SQLServerDAL\SqlHelper.cs" />
+    <Compile Include="SQLServerDAL\UserDB.cs" />
     <Compile Include="WebPages\RiskItems.aspx.cs">
       <DependentUpon>RiskItems.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,9 +104,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="IDAL\" />
-    <Folder Include="Models\" />
+    <Folder Include="Libs\" />
     <Folder Include="Styles\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
